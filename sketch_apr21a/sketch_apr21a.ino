@@ -60,7 +60,7 @@ void loop() {
 
   move_forward();
 
-  if (rightDistance < DISTANCE_THRESHOLD) {
+  if (rightDistance > DISTANCE_THRESHOLD) {
     rotate_left();
     delay(600);
     stop();
